@@ -91,7 +91,7 @@ public class CardGame {
                     g.drawRect(drawX,y,110,150);
         
                     //draw suit
-                    g.drawImage(card.getImage(), drawX+2, y, null);
+                    g.drawImage(card.getImage(), drawX+2, y, 110, 150,null);
         
                 
                 
@@ -146,7 +146,7 @@ public class CardGame {
         g.setFont(new Font("Arial", Font.BOLD, 25));
         g.drawString("Player One Cards : ", 70, 190);
         for(int i = 0; i<playerOneCards.size(); i++){
-            g.drawImage(playerOneCards.get(i).getImage(), x, 100, null);
+            g.drawImage(playerOneCards.get(i).getImage(), x, 100, 110, 150,null);
             x+=120;
         }
     }
@@ -158,7 +158,7 @@ public class CardGame {
         g.setFont(new Font("Arial", Font.BOLD, 25));
         g.drawString("Player Two Cards : ", 70, 380);
         for(int i = 0; i<playerTwoCards.size(); i++){
-            g.drawImage(playerTwoCards.get(i).getImage(), x, 300, null);
+            g.drawImage(playerTwoCards.get(i).getImage(), x, 300, 110, 150, null);
             x+=120;
         }
     }
